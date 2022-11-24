@@ -1,0 +1,32 @@
+apply plugin: 'java'
+
+group 'com.clipboardhealth'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+defaultTasks 'clean', 'test'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.6.0'
+    implementation 'org.testng:testng:7.6.1'
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.19.0'
+    implementation 'org.apache.logging.log4j:log4j-api:2.19.0'
+    implementation 'org.aeonbits.owner:owner:1.0.12'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.3.1'
+}
+
+test {
+    useTestNG {
+        useDefaultListeners = true
+        suites "src/test/resources/testng.xml"
+
+    }
+}

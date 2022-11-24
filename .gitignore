@@ -1,0 +1,6 @@
+.gradle/
+.idea/
+bash.exe.stackdump
+build/
+/classes/
+/test-output/
