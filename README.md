@@ -28,6 +28,5 @@ There are several options:
 1. Create new page object java classes in the *src/main/java/com/clipboardhealth/automation/pageobject*;
 2. Create new test in the *src/test/java/com/clipboardhealth/automation*;
 
-## How to generate report
-1. Run "aggregate" task of the serenity-maven-plugin;
-2. Find generated report *clipboard-health-test-task/target/site/serenity/index.html*;
+## Report
+1. TestNG report can be found in *test-output/index.html*;
